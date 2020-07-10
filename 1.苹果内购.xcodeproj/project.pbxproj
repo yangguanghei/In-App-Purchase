@@ -16,6 +16,8 @@
 		C1474E0D24B843B10032444E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1474E0C24B843B10032444E /* main.m */; };
 		C1474E1724B843B10032444E /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1474E1624B843B10032444E /* ______Tests.m */; };
 		C1474E2224B843B10032444E /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1474E2124B843B10032444E /* ______UITests.m */; };
+		C1474E3124B8445F0032444E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1474E3024B8445F0032444E /* StoreKit.framework */; };
+		C1474E3424B84CFD0032444E /* LSAppStorePay.m in Sources */ = {isa = PBXBuildFile; fileRef = C1474E3324B84CFD0032444E /* LSAppStorePay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		C1474E1D24B843B10032444E /* 1.苹果内购UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "1.苹果内购UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1474E2124B843B10032444E /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		C1474E2324B843B10032444E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1474E3024B8445F0032444E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C1474E3224B84CFD0032444E /* LSAppStorePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAppStorePay.h; sourceTree = "<group>"; };
+		C1474E3324B84CFD0032444E /* LSAppStorePay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAppStorePay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1474E3124B8445F0032444E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 				C1474E1524B843B10032444E /* 1.苹果内购Tests */,
 				C1474E2024B843B10032444E /* 1.苹果内购UITests */,
 				C1474DF824B843AE0032444E /* Products */,
+				C1474E2F24B8445F0032444E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +117,8 @@
 				C1474DFE24B843AE0032444E /* SceneDelegate.m */,
 				C1474E0024B843AE0032444E /* ViewController.h */,
 				C1474E0124B843AE0032444E /* ViewController.m */,
+				C1474E3224B84CFD0032444E /* LSAppStorePay.h */,
+				C1474E3324B84CFD0032444E /* LSAppStorePay.m */,
 				C1474E0324B843AE0032444E /* Main.storyboard */,
 				C1474E0624B843B10032444E /* Assets.xcassets */,
 				C1474E0824B843B10032444E /* LaunchScreen.storyboard */,
@@ -135,6 +144,14 @@
 				C1474E2324B843B10032444E /* Info.plist */,
 			);
 			path = "1.苹果内购UITests";
+			sourceTree = "<group>";
+		};
+		C1474E2F24B8445F0032444E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1474E3024B8445F0032444E /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1474E0224B843AE0032444E /* ViewController.m in Sources */,
+				C1474E3424B84CFD0032444E /* LSAppStorePay.m in Sources */,
 				C1474DFC24B843AE0032444E /* AppDelegate.m in Sources */,
 				C1474E0D24B843B10032444E /* main.m in Sources */,
 				C1474DFF24B843AE0032444E /* SceneDelegate.m in Sources */,
@@ -440,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58GP5T8P44;
+				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "1.苹果内购/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58GP5T8P44;
+				DEVELOPMENT_TEAM = N4686HA3AU;
 				INFOPLIST_FILE = "1.苹果内购/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
